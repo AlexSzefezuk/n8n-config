@@ -38,7 +38,7 @@ services:
 
   n8n_editor:
     container_name: n8n_editor
-    image: n8nio/n8n:1.68.0
+    image: n8nio/n8n:1.100.1
     restart: always
     environment:
       - DB_TYPE=${DB_TYPE}
@@ -81,7 +81,7 @@ services:
 
   n8n_webhook:
     container_name: n8n_webhook
-    image: n8nio/n8n:1.68.0
+    image: n8nio/n8n:1.100.1
     restart: always
     command: webhook
     environment:
@@ -120,7 +120,7 @@ services:
 
   n8n_worker:
     container_name: n8n_worker
-    image: n8nio/n8n:1.68.0
+    image: n8nio/n8n:1.100.1
     restart: always
     command: worker --concurrency=5
     environment:
